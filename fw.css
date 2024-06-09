@@ -1,0 +1,181 @@
+:root {
+  --myMargin: 3rem 4rem;
+  --myPadding: 1rem 6rem;
+  --beige: #d6c29f;
+  --grey: #9c9c9c;
+  --wine: #620b0b;
+  --background: #222222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+form {
+  background-color: var(--grey);
+  padding: 4rem 6rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.area {
+  margin: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+#savedShows p {
+  padding: var(--myPadding);
+  text-transform: uppercase;
+  color: var(--beige);
+}
+
+#storageOutput {
+  padding: var(--myPadding);
+  color: #ffffff;
+  border-bottom: 2px solid var(--beige);
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+#resetContainer {
+  margin-top: 2rem;
+}
+
+#clearBtn {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 2.2rem;
+  border: 5px solid var(--grey);
+}
+
+#clearBtn:hover {
+  border: 8px solid var(--wine);
+  color: var(--wine);
+  font-weight: 700;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 30%;
+  z-index: 2;
+  width: 50%;
+  overflow: auto;
+  background-color: var(--beige);
+  border-radius: 1rem;
+}
+
+.modal-content {
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--grey);
+  color: var(--wine);
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin-right: 1rem;
+}
+
+#my-tag {
+  margin-left: auto;
+  margin: 0;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--wine);
+}
+
+a:hover {
+  color: var(--background);
+}
+
+
+@media screen and (max-width: 425px) {
+  body {
+    display: block;
+    margin: 2rem;
+  }
+
+  .area {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
