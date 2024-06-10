@@ -30,8 +30,8 @@ saveBtn.addEventListener(
     complete.style.fontSize = "3rem";
 
     if (user === "") {
-      // alert("please enter a username");
-      popUp((complete.innerText = "please enter a name"));
+    
+      popUp((complete.innerText = "please enter a brand name"));
       closeModal();
     } else {
       popUp((complete.innerText = `${user} - ${style}, added`));
@@ -64,7 +64,6 @@ function closeModal() {
 }
 
 // saved items
-
 const savedOutput = () => {
   let storageOutput = document.getElementById("storageOutput");
   storageOutput.innerText = "";
@@ -81,29 +80,26 @@ const savedOutput = () => {
   }
 };
 
-// keep saved open on page refresh
+// keep saved on refresh
 window.addEventListener("load", savedOutput);
 
 // search local
-let searchResult = null;
-
 const searchLocalStorage = (e) => {
   e.preventDefault();
   searchOutput.innerText = "";
   let user = searchInput.value;
   let style = localStorage.getItem(user);
-  if (searchResult === null) {
-    searchResult = document.createElement("p");
+  if (style!== null && style!== undefined) {
+    let searchResult = document.createElement("p");
     searchResult.innerText = `results from search: \n ${style}, ${user}`;
     searchOutput.append(searchResult);
   } else {
-    searchResult = document.createElement("p");
+    let searchResult = document.createElement("p");
     searchResult.innerText = `${user} not found`;
     searchOutput.append(searchResult);
   }
 
   searchInput.value = "";
-  searchResult = null;
 };
 
 const clearLocal = () => {

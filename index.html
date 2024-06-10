@@ -12,75 +12,85 @@
     <title>MyFW</title>
   </head>
   <body>
+    <nav>
+      <a href="https://github.com/aaronAlien" class="nav-icon" target="_blank">
+        <h1 class="nav-title">My Fashion Week Log</h1>
+      </a>
+    </nav>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <p id="complete"></p>
       </div>
     </div>
-    <form id="inputForm" class="form" autocomplete="off">
-      <div class="area">
-        <label for="userIn">Enter brand name: </label>
-        <input
-          type="text"
-          name="userIn"
-          id="userIn"
-          placeholder="Schiaparelli"
-        />
-      </div>
-      <div class="area">
-        <label for="city">select city:</label>
-        <select name="city" id="city">
-          <option value="New York">New York</option>
-          <option value="London">London</option>
-          <option value="Milan">Milan</option>
-          <option value="Paris">Paris</option>
-        </select>
-      </div>
+    <div class="form-container">
+      <form id="inputForm" class="form" autocomplete="off">
+        <div class="area">
+          <label for="userIn">Enter brand name: </label>
+          <input
+            type="text"
+            name="userIn"
+            id="userIn"
+            placeholder="Schiaparelli"
+          />
+        </div>
+        <div class="area">
+          <label for="city">select city:</label>
+          <select name="city" id="city">
+            <option value="New York">New York</option>
+            <option value="London">London</option>
+            <option value="Milan">Milan</option>
+            <option value="Paris">Paris</option>
+          </select>
+        </div>
 
-      <div class="area">
-        <button id="saveBtn" type="submit">save!</button>
-      </div>
-      <div id="savedShows">
-        <p>shows this season:</p>
-        <ul id="storageOutput"></ul>
-      </div>
+        <div class="area">
+          <button id="saveBtn" type="submit">save!</button>
+        </div>
+        <div id="savedShows">
+          <p>shows this season:</p>
+          <ul id="storageOutput"></ul>
+        </div>
 
-      <div class="area">
-        <label for="searchInput">search brand name</label>
-        <input
-          type="text"
-          name="searchInput"
-          id="searchInput"
-          placeholder="search..."
-        />
-        <button type="submit" id="searchBtn">go</button>
-      </div>
-    </form>
-
-    <ul id="searchOutput"></ul>
-
-    <div class="area" id="resetContainer">
+        <div class="area">
+          <label for="searchInput">search brand name</label>
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="search..."
+          />
+          <div class="area">
+            <button type="submit" id="searchBtn">go</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="area">
+      <p id="searchOutput"></p>
+    </div>
+    <div class="resetContainer">
       <label for="clearBtn"></label>
       <button id="clearBtn" type="reset" value="reset">reset all</button>
     </div>
   </body>
+
   <footer id="footer-container">
     <div class="footer-content">
-      <p id="my-tag">project by <a href="#" target="_blank">aaron S</a></p>
+      <p id="my-tag">project by Aaron H S</p>
       <ul class="social-links">
         <li>
-          <a href="#" target="_blank">
+          <a href="https://github.com/aaronAlien" target="_blank">
             <i class="fab fa-github fa-lg"></i>
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a href="https://www.linkedin.com/in/aaron-shakespeare/" target="_blank">
             <i class="fab fa-linkedin fa-lg"></i>
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            <i class="fab fa-twitter fa-lg"></i>
+          <a href="https://www.instagram.com/_thatshakespeare/" target="_blank">
+            <i class="fab fa-instagram fa-lg"></i>
           </a>
         </li>
       </ul>
